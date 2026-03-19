@@ -1,0 +1,11 @@
+[tool.poetry]
+name = "mitmach-agent"
+version = "0.1.0"
+description = "Mitmachplattform virtueller Mitarbeiter"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+anthropic = "*"
+flask = "*"
+requests = "*"
+apscheduler = "*"
