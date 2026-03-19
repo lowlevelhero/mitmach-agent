@@ -18,7 +18,7 @@ logger = logging.getLogger(__name__)
 app = Flask(__name__)
 client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
 
-PLATFORM_URL   = os.environ.get("PLATFORM_URL", "https://ausbildungswerk.replit.app")
+PLATFORM_URL   = os.environ.get("PLATFORM_URL", "https://mitmachplattform.de")
 AGENT_TOKEN    = os.environ.get("AGENT_TOKEN", "")
 platform_headers = {"x-agent-token": AGENT_TOKEN}
 
