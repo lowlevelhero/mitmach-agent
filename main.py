@@ -18,9 +18,9 @@ logger = logging.getLogger(__name__)
 app = Flask(__name__)
 client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
 
-PLATFORM_URL = os.environ.get("PLATFORM_URL", "https://ausbildungswerk.replit.app")
-PLATFORM_TOKEN = os.environ.get("PLATFORM_TOKEN", "")
-platform_headers = {"Authorization": f"Bearer {PLATFORM_TOKEN}"}
+PLATFORM_URL   = os.environ.get("PLATFORM_URL", "https://ausbildungswerk.replit.app")
+AGENT_TOKEN    = os.environ.get("AGENT_TOKEN", "")
+platform_headers = {"x-agent-token": AGENT_TOKEN}
 
 # ── Tools: Was der Agent tun darf ─────────────────────
 tools = [
